@@ -1,0 +1,30 @@
+
+    h1, h2 {
+        font-family: 'Amatica SC', cursive;
+        text-align: Center
+    }
+    p  {
+        font-family: 'Open Sans Condensed';
+    }
+
+
+
+    .container div{
+        padding: 1%;
+        box-sizing:border-box;
+        min-height:50px;
+    }
+
+    .left-col, .right-col {
+        background-color: white;
+        width: 33%;
+        float: left;
+    }
+
+    .center-col {
+        background-color:white;
+        width: 33%;
+        float: left;
+    }
+
+
