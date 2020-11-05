@@ -1,6 +1,27 @@
-p {
+span {
   color: blue; /* Styles! */
   font-size: 20px;
   font-style: italic;
   line-height: 22px;
+}
+
+p {
+  color: purple;
+}
+
+body{
+  background-color: rgba(46, 88, 200, 0.6);
+}
+
+h1 {
+  text-align: center;
+  text-transform:uppercase;
+  text-decoration: underline;
+  line-height: 100px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Henny Penny';
+  font-size: 120px;
+
+
 }

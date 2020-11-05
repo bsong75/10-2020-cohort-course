@@ -1,0 +1,70 @@
+.flexbox-container {
+    display: flex;
+    justify-content:space-around; /* space around, space between, space evenly, */
+   /* align-items: center; */
+   /* flex-direction: column; */
+    flex-wrap: wrap;
+    background-color: gray;
+  /*  min-height: 1500px; */
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: solid 3px black;
+}
+
+#item-1 {
+    min-height: 100px;
+    display: flex;
+    justify-content:center;
+}
+#item-2 {
+    min-height: 200px;
+}
+#item-3 {
+    min-height: 300px;
+}
+
+/*  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.col {
+    width: 33%;
+    border: solid 1px red;
+    height: 100%;
+    display: inline-block;
+}
+
+.third {
+    width:32%;
+
+}
+
+.third img {
+    border: solid 1px pink;
+}
+
+img#purpole {
+    border: solid 1px purple;
+}
+
+#center {
+    border-left: solid 5px black;
+    border-right:solid 5px black;
+}
+
+img {
+    color aqua;
+}
+*/

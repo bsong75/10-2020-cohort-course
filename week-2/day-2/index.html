@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+            /* The animation code */
+        @keyframes example {
+        from {transform: translatex(0): red;}
+        to {transform: translateX(-200px);}
+        }
 
+            /* The element to apply the animation to */
+        #imageSlider {
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="window" style="background-color: aqua; width:200px; height:200px; margin: 0 auto; overflow: hidden">
+        <div id="imageSlider" style="display: flex;">
+            <img width="200px" height="200px" src="https://th.bing.com/th/id/OIP.jhvDquLXN99B2HaycjguqgHaE7?w=274&h=183&c=7&o=5&pid=1.7">
+            <img width="200px" height="200px" src="https://th.bing.com/th/id/OIP.lbOWVONpGNVZW7DiT7dNVQHaFT?w=282&h=202&c=7&o=5&pid=1.7">
+            <img width="200px" height="200px" src="https://th.bing.com/th/id/OIP.ZyOKKvzUVwOu9iyk4Ujw1gHaEH?w=321&h=180&c=7&o=5&pid=1.7">
+
+        </div>
+    
+    </div>
+</body>
+
+</html>
