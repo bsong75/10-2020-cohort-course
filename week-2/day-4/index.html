@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Carousel</title>
+
+<style>
+            /* The animation code */
+/*        @keyframes example {
+            from {transform: translatex(0): red;}
+            to {transform: translateX(-200px);}
+            } */
+
+            /* The element to apply the animation to */
+        #imageSlider {
+            display: flex;
+            animation-duration: 4s;
+
+/*            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite; */
+            }
+
+        #window {
+            border: 10px red;
+            overflow: hidden;
+            width: 380px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="window" style="margin: 0 auto">
+        <div id="imageSlider">
+            <img width="380px" height="400px" src="./img1.jpg">
+            <img width="380px" height="400px" src="./img2.jpg">
+            <img width="380px" height="400px" src="./img3.jpg">
+            <img width="380px" height="400px" src="./img4.jpg">
+            <img width="380px" height="400px" src="./img5.jpg">
+        </div>
+    </div>
+
+    <button onclick ="prevImage()">Previous Bahama Image</button>
+    <button onclick ="nextImage()">Next Bahama Image</button>
+
+    <script>
+        var currentPosition = 0;
+        var prevImage = function() {
+            currentPosition = currentPosition + 380;
+            document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+            }
+
+        var nextImage = function() {     
+            currentPosition = currentPosition - 380;
+            document.getElementById('imageSlider').style.transform = 'translateX(' + currentPosition + 'px)'
+            }
+    </script>
+</body>
+
+</html>
